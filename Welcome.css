@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: grid;
+    grid-template-areas:
+    "hr hr hr hr hr hr"
+    "na na na na na na"
+    "as as sec sec art art"
+    "ft ft ft ft ft ft" 
+    ;
+}
+header{
+    grid-area: hr;
+    background-color: #ffe5ce;
+    display: flex;
+    justify-content: space-around;
+}
+nav{
+    grid-area: na;
+    background-color: white;
+}
+footer{
+    grid-area: ft;
+    background-color: brown;
+}
+aside{
+    grid-area: as;
+    background-color: chocolate;
+}
+article{
+    grid-area: art;
+    background-color: yellowgreen;
+}
+section{
+    grid-area: sec;
+}
+.container1{
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    align-self: center;
+    justify-content: space-around;
+    width: 30%;
+}
+.container2{
+    width: 20%;
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+    justify-content: space-evenly;
+    align-self: center;
+    align-items: center;
+}
+.Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    padding: 10px;
+    font-size: 24px;
+}
+h1{
+    padding: 10px;
+    font-size: 32px;
+}
