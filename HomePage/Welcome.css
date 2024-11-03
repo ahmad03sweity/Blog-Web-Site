@@ -11,6 +11,29 @@ body {
     "as as sec sec art art"
     "ft ft ft ft ft ft";
 }
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+    grid-template-areas:
+      "hr hr hr hr hr hr"
+      "na na na na na na"
+      "as as as as as as"
+      "sec sec sec sec sec sec"
+      "art art art art art art"
+      "ft ft ft ft ft ft";
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    height: 700px;
+  }
+  header{
+    justify-content: center;
+  }
+}
 nav { 
   grid-area: na;
   background-color: #cee8ff;

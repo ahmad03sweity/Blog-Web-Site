@@ -13,6 +13,18 @@ body {
     "ft ft ft ft ft ft";
     ;
 }
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+        grid-template-areas: 
+            "hr hr hr hr hr hr"
+            "na na na na na na"
+            "sec sec sec sec sec sec"
+            "art art art art art art"
+            "ft ft ft ft ft ft";
+    }
+}
 nav{
     grid-area: na;
     width: 20%;

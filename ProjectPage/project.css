@@ -7,7 +7,42 @@ body {
     display: grid;
     grid-template-areas: 
     "hr hr hr hr hr hr"
-    
+    "sc sc sc sc sc sc"
+    "fg fg fg fg fg fg"
     "ft ft ft ft ft ft"
     ;
+}
+section{
+    grid-area: sc;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.figures{
+    grid-area: fg;
+}
+.proj{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.proj-1{
+    background-color: rgb(37, 150, 110);
+}
+.proj-2{
+    background-color: rgb(133, 166, 92);
+}
+h2{
+    text-align: center;
+}
+figure{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+figcaption{
+    margin-top:20px ;
 }
