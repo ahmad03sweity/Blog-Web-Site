@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ahmad Sweity Web Page</title>
     <link rel="stylesheet" href="Welcome.css" />
+
   </head>
   <body>
     <header>
       <div class="container1">
-        <div class="Home">Home</div>
+        <div class="home">Home</div>
         <div class="About">About</div>
         <div class="Project">Project</div>
         <div class="Help">Help</div>
@@ -17,29 +18,98 @@
       <div class="container2">
         <div>
           <a href="https://www.facebook.com/ahmad.o.sweity"
-            ><img src="icons/Facebook.png" alt="Facebook Icon" width="50px"
+            ><img class="facebook-image" src="icons/Facebook.png" alt="Facebook Icon" width="50px"
           /></a>
         </div>
         <div>
           <a href="https://github.com/ahmad03sweity"
-            ><img src="icons/GitHub.png" alt="GitHub Icon" width="70px"
+            ><img class="github-image" src="icons/GitHub.png" alt="GitHub Icon" width="70px"
           /></a>
         </div>
         <div>
           <a href="https://www.instagram.com/ahmad.sweity03/"
-            ><img src="icons/instagram.png" alt="instagram Icon" width="50px"
+            ><img class="insta-image" src="icons/instagram.png" alt="instagram Icon" width="50px"
           /></a>
         </div>
       </div>
     </header>
     <nav class="Home">
-      <p><b>Welcome</b> To My Web Site</p>
+      <p>
+        <i><b>Welcome</b></i> To My Web Site
+      </p>
       <h1>Ahmad Sweity</h1>
-      <img src="" alt="">
+      <img src="MyPicture/Ahmed.jpeg" class="profile" alt="" />
     </nav>
-    <section>section</section>
-    <article>article</article>
-    <aside>aside</aside>
-    <footer>footer</footer>
+    <aside>
+      <div class="container3">
+        <img class="second-image" src="MyPicture/second.jpg" alt="" />
+        <p class="second-image-paraghraph">
+          Ahmad Sweity is a computer engineering student at Palestine
+          Polytechnic University, specializing in front-end development and IoT
+          projects. He is passionate about embedded systems, ethical hacking,
+          and building innovative solutions, currently working on integrating
+          IoT hubs and sensor data with Microsoft Azure.
+        </p>
+      </div>
+    </aside>
+    <section>
+        <h2>Skills</h2>
+        <br />
+        <div>
+          <div>Html5&CSS3</div>
+          <div>JavaScript</div>
+          <div>React&Radix</div>
+          <div>Nodejs & Express</div>
+          <div>SQL & NOSQL Database</div>
+          <div>Git & GitHub</div>
+          <div>Responsve design</div>
+        </div>
+    </section>
+    <article>
+        <img src="Other picture/PPU.png" alt="My University">
+        <p>
+            Palestine Polytechnic University, located in the city of Hebron, is a public Palestinian university that adheres to the regulations of the Palestinian Ministry of Higher Education and Scientific Research. It is a member of the Palestinian Higher Education Council, the Association of Arab Universities, the Association of Islamic Universities, and the International Association of Universities. The university also maintains strong cooperative relationships with numerous academic and community institutions, both regionally and internationally.
+        </p>
+    </article>
+    <footer>
+        <h2>contact me</h2>
+        <div>
+          if you'd like to get in touch , please fill out the form below :
+        </div>
+        <form class="login" action="" method="post">
+          <label for="name">Name:</label>
+          <br />
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name "
+          />
+          <br />
+          <label for="ema">Email:</label> <br />
+          <input
+            type="email"
+            id="ema"
+            name="emai"
+            placeholder="Enter your Email"
+            autocomplete="on"
+          />
+          <br />
+          <label for="Mess">Message</label><br />
+          <textarea
+            name="Mess"
+            id="Mess"
+            placeholder="Enter your message"
+          ></textarea>
+          <br />
+          <input class="but" type="button" value="Submit" />
+        </form>
+        <div>
+            &copy; 2024 Ahmad Sweity |
+            <a class="myaccount" href="https://github.com/ahmad03sweity">GitHub</a> |
+            <a class="myaccount" href="https://www.linkedin.com/in/ahmadsweity/">linkedIn</a>
+          </div>
+      </section>
+    </footer>
   </body>
 </html>
