@@ -1,0 +1,23 @@
+footer {
+    grid-area: ft;
+    background-color: rgba(0, 0, 0, 0.621);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .login{
+      align-self: flex-start;
+      padding: 5px;
+      margin: 5px;
+  }
+  label{
+      margin: 5px;
+  }
+  input{
+      margin: 10px;
+  }
+  footer a{
+    color: white;
+  }

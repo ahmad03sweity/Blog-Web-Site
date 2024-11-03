@@ -1,3 +1,5 @@
+@import url(/header.css);
+@import url(/footer.css);
 body {
   margin: 0;
   padding: 0;
@@ -9,36 +11,11 @@ body {
     "as as sec sec art art"
     "ft ft ft ft ft ft";
 }
-header {
-  grid-area: hr;
-  background-color: #ffe5ce;
-  display: flex;
-  justify-content: space-around;
-}
-nav {
+nav { 
   grid-area: na;
   background-color: #cee8ff;
 }
-footer {
-  grid-area: ft;
-  background-color: rgba(0, 0, 0, 0.621);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.login{
-    align-self: flex-start;
-    padding: 5px;
-    margin: 5px;
-}
-label{
-    margin: 5px;
-}
-input{
-    margin: 10px;
-}
+
 aside {
   grid-area: as;
   background-color: #e8ffce;
@@ -58,23 +35,7 @@ article {
 section {
   grid-area: sec;
 }
-.container1 {
-  display: flex;
-  padding: 5px;
-  margin: 5px;
-  align-self: center;
-  justify-content: space-around;
-  width: 30%;
-}
-.container2 {
-  width: 20%;
-  display: flex;
-  padding: 5px;
-  margin: 5px;
-  justify-content: space-evenly;
-  align-self: center;
-  align-items: center;
-}
+
 .Home {
   display: flex;
   flex-direction: column;
@@ -136,5 +97,5 @@ section > div > div {
 }
 .myaccount{
     color: white;
-    text-decoration: ;
+    text-decoration: none;
 }
