@@ -1,6 +1,6 @@
-@import url(/Importing-file/header.css);
-@import url(/Importing-file/footer.css);
-@import url(/Importing-file/body.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(body.css);
 body {
     display: grid;
     grid-gap: 5px;

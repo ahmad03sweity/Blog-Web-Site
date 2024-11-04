@@ -1,6 +1,6 @@
-@import url(/Importing-file/header.css);
-@import url(/Importing-file/footer.css);
-@import url(/Importing-file/body.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(body.css);
 body {
   display: grid;
   grid-template-areas:
@@ -18,7 +18,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
-  width: 100%;
+  width: fit-content;
   max-width: 1200px;
 }
 
@@ -81,6 +81,7 @@ body {
       "hr hr hr hr hr hr"
       "na na na na na na"
       "as as sec sec art art"
+      "bp bp bp bp bp bp"
       "ft ft ft ft ft ft";
     font-size: 18px;
   }
@@ -94,7 +95,8 @@ body {
   .container2 {
     width: 50%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+
   }
   .icon-image-f,
   .icon-image-g,
@@ -105,8 +107,9 @@ body {
     width: 180px;
   }
   section > div {
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-direction: column;
     justify-content: center;
     width: 100%;
     max-height: fit-content;
@@ -119,8 +122,8 @@ body {
 @media only screen and (max-width: 600px) {
   .blog-posts{
     grid-template-columns: max-content;
-    /* height: 2500px; */
-    height: 100%;
+    height: 2500px;
+    /* height: 100%; */
   }
   .blog-card{
     width: 50%;

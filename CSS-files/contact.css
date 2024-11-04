@@ -1,6 +1,6 @@
-@import url(/Importing-file/header.css);
-@import url(/Importing-file/body.css);
-@import url(/Importing-file/footer.css);
+@import url(header.css);
+@import url(body.css);
+@import url(footer.css);
 body {
     display: grid;
     grid-template-areas: 
