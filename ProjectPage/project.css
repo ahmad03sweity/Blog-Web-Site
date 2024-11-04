@@ -1,9 +1,7 @@
-@import url(/header.css);
-@import url(/footer.css);
+@import url(/Importing-file/header.css);
+@import url(/Importing-file/footer.css);
+@import url(/Importing-file/body.css);
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Courier New", Courier, monospace;
     display: grid;
     grid-template-areas: 
     "hr hr hr hr hr hr"
@@ -11,6 +9,94 @@ body {
     "fg fg fg fg fg fg"
     "ft ft ft ft ft ft"
     ;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-areas: 
+            "hr hr hr hr hr hr"
+            "sc sc sc sc sc sc"
+            "fg fg fg fg fg fg"
+            "ft ft ft ft ft ft";
+        font-size: 16px; /* Set a base font size for better readability */
+    }
+    header, footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    .container1, .container2 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .facebook-image, .github-image, .insta-image {
+        width: 40px; /* Smaller icon sizes for mobile screens */
+    }
+    section, .figures {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+    figure img {
+        width: 100%; /* Full-width images for mobile */
+        max-width: 300px;
+    }
+    h1, h2 {
+        font-size: 1.5rem; /* Adjust heading font size */
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        grid-template-areas:
+            "hr hr hr hr hr hr"
+            "sc sc sc sc sc sc"
+            "fg fg fg fg fg fg"
+            "ft ft ft ft ft ft";
+        font-size: 18px; /* Slightly larger font size for tablets */
+    }
+    header, footer {
+        padding: 10px 20px;
+        justify-content: space-around;
+    }
+    .container1, .container2 {
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .facebook-image, .github-image, .insta-image {
+        width: 50px; /* Medium size icons for tablet screens */
+    }
+    section, .figures {
+        width: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    figure img {
+        max-width: 400px; /* Adjust image width for tablets */
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.75rem;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+h1, h2, p {
+    font-size: 1rem;
 }
 section{
     grid-area: sc;

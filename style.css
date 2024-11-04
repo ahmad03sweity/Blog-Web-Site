@@ -1,9 +1,7 @@
-@import url(/header.css);
-@import url(/footer.css);
+@import url(/Importing-file/header.css);
+@import url(/Importing-file/footer.css);
+@import url(/Importing-file/body.css);
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Courier New", Courier, monospace;
   display: grid;
   grid-template-areas:
     "hr hr hr hr hr hr"
@@ -11,10 +9,44 @@ body {
     "as as sec sec art art"
     "ft ft ft ft ft ft";
 }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    grid-template-areas:
+      "hr hr hr hr hr hr"
+      "na na na na na na"
+      "as as sec sec art art"
+      "ft ft ft ft ft ft";
+    font-size: 18px;
+  }
+  header, footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .container1, .container2 {
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .icon-image-f, .icon-image-g, .icon-image-i {
+    width: 50px;
+  }
+  .profile {
+    width: 180px;
+  }
+  section > div {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .second-image {
+    width: 60%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   body {
-    margin: 0;
-    padding: 0;
     grid-template-areas:
       "hr hr hr hr hr hr"
       "na na na na na na"
@@ -22,19 +54,48 @@ body {
       "sec sec sec sec sec sec"
       "art art art art art art"
       "ft ft ft ft ft ft";
+    font-size: 16px; /* Adjust font size for readability */
   }
-  section {
+  header,
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container1,
+  .container2 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+  }
+  .container1 div,
+  .container2 div {
+    margin: 10px 0;
+  }
+  .icon-image-f,
+  .icon-image-g,
+  .icon-image-i {
+    width: 40px;
+  }
+  .profile {
+    width: 150px;
+  }
+  section,
+  article,
+  aside {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  .second-image {
+    width: 80%;
+  }
+  section {
     height: 700px;
   }
-  header{
-    justify-content: center;
-  }
 }
-nav { 
+
+nav {
   grid-area: na;
   background-color: #cee8ff;
 }
@@ -48,7 +109,7 @@ aside {
   align-items: center;
 }
 article {
-    grid-template-columns: max-content;
+  grid-template-columns: max-content;
   grid-area: art;
   background-color: #bc82ff;
   display: flex;
@@ -57,6 +118,7 @@ article {
 }
 section {
   grid-area: sec;
+  height: 700px;
 }
 
 .Home {
@@ -67,12 +129,26 @@ section {
 }
 p {
   padding: 10px;
-  font-size: 24px;
+  font-size: 1rem;
+}
+label{
+  font-size: 1rem;
+}
+textarea{
+  font-size: 1rem;
 }
 h1 {
   padding: 10px;
-  font-size: 32px;
+  font-size: 2rem;
 }
+input{
+  font-size: 1rem;
+}
+/* img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
 .profile {
   width: 200px;
   border-radius: 50%;
@@ -108,7 +184,7 @@ section > div {
   width: 95%;
 }
 section > div > div {
-    text-align: center;
+  text-align: center;
   color: white;
   max-width: 170px;
   background-color: green;
@@ -118,7 +194,7 @@ section > div > div {
   margin: 20px;
   padding: 10px;
 }
-.myaccount{
-    color: white;
-    text-decoration: none;
+.myaccount {
+  color: white;
+  text-decoration: none;
 }

@@ -1,0 +1,110 @@
+@import url(/Importing-file/header.css);
+@import url(/Importing-file/body.css);
+@import url(/Importing-file/footer.css);
+body {
+    display: grid;
+    grid-template-areas: 
+    "hr hr hr hr hr hr"
+    "ci ci ci ci ci ci"
+    "cfs cfs cfs cfs cfs cfs"
+    "ft ft ft ft ft ft"
+    ;
+    background-color: #f4f4f9;
+}
+@media only screen and (max-width: 600px) {
+    .contact-form {
+        width: 90%;
+    }
+    .contact-info, .contact-details {
+        font-size: 1rem;
+        margin: 10px;
+    }
+    .container1, .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    header {
+        flex-direction: column;
+    }
+    footer {
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .contact-form {
+        width: 70%;
+    }
+    .contact-info, .contact-details {
+        font-size: 1.1rem;
+    }
+    header {
+        padding: 10px 20px;
+    }
+}
+.contact-info {
+    text-align: center;
+    margin: 20px;
+    grid-area: ci;
+}
+
+.contact-details {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contact-form-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+    grid-area: cfs;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffa07a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .contact-form {
+        width: 90%;
+    }
+    .contact-info, .contact-details {
+        font-size: 1rem;
+        margin: 10px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .contact-form {
+        width: 70%;
+    }
+    .nav-container {
+        gap: 15px;
+    }
+    .contact-details {
+        font-size: 1.1rem;
+    }
+}
